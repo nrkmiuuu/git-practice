@@ -10,14 +10,14 @@
 
 <body>
     <form action="/inquiry/post" method="post">
-        要件 <select name="inquiry_subject" value="製品について">
-            <option>製品について</option>
+        要件 <select name="inquiry_subject">
+            <option value="製品について">製品について</option>
             <option>会社について</option>
             <option>サービスについて</option>
             <option>その他</option>
         </select><br>
-        メールアドレスemail <input type="email"><br>
-        電話番号 <input type="tel"><br>
+        メールアドレスemail <input type="email" name="email"><br>
+        電話番号 <input type="tel" name="tel"><br>
         問い合わせ内容<textarea name="inquiry_body" cols="50" rows="5" required></textarea><br>
         <br>
         <button>ログインする</button>
